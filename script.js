@@ -1,5 +1,9 @@
-
-  AOS.init({ duration: 1000, once: true });
+AOS.init({
+  duration: 1000,
+  once: false,
+  easing: 'ease-in-out',
+  mirror: true   // 👈 THIS makes animation trigger on scroll up nicely
+});
 
   window.addEventListener("scroll", () => {
     document.querySelector(".navbar")
